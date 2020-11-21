@@ -1,0 +1,10 @@
+# Project exclude paths
+/springCloud-api/target/
+/springcloud-consumer-Dept-80/target/
+/springcloud-consumer-Dept-feign/target/
+/springcloud-Eureka-7001/target/
+/springcloud-Eureka-7002/target/
+/springcloud-Eureka-7003/target/
+/springcloud-provider-Dept-8001/target/
+/springcloud-provider-Dept-8002/target/
+/springcloud-provider-Dept-hystrix8001/target/

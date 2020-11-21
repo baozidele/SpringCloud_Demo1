@@ -1,0 +1,22 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baozi.springcloud.dao.DeptDao">
+    <resultMap id="resultDept" type="Dept">
+        <id column="deptno" property="deptno"/>
+        <result column="dname" property="dname"/>
+        <result column="db_resource" property="db_source"/>
+    </resultMap>
+
+    <insert id="addDept" parameterType="com.baozi.springcloud.pojo.Dept">
+        insert into dept (dname,db_resource) values (#{dname},DATABASE());
+    </insert>
+
+    <select id="queryById" resultMap="resultDept" parameterType="Long">
+        select * from dept where deptno = #{deptno};
+    </select>
+
+    <select id="queryAll" resultMap="resultDept">
+        select * from dept;
+    </select>
+</mapper>
