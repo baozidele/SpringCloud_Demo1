@@ -4,6 +4,11 @@
 server:
   port: 7001
 
+spring:
+  profile: dev
+  application:
+    name: springcloud-config-eureka
+
 #Eureka配置
 eureka:
   instance:
