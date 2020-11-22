@@ -1,13 +1,13 @@
 spring:
   profiles:
-    active: dev
+    active: Demo
 
 ---
 server:
   port: 9003
 
 spring:
-  profiles: dev
+  profiles: Demo
   application:
     name: springcloud-provider-dept
 
@@ -21,7 +21,7 @@ server:
   port: 9005
 
 spring:
-  profiles: test
+  profiles: DemoTest
   application:
     name: springcloud-provider-dept
 
