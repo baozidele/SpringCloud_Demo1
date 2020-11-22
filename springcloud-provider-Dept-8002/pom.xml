@@ -12,6 +12,11 @@
     <artifactId>springcloud-provider-Dept-8002</artifactId>
 
     <dependencies>
+        <!--        完善监控-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-eureka -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>

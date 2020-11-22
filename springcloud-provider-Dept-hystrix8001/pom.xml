@@ -12,18 +12,24 @@
     <artifactId>springcloud-provider-Dept-hystrix8001</artifactId>
 
     <dependencies>
+        <!--        完善监控-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-eureka -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka</artifactId>
             <version>1.4.6.RELEASE</version>
         </dependency>
-
+<!--服务器熔断-->
         <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-hystrix</artifactId>
         <version>1.4.6.RELEASE</version>
         </dependency>
+
 
         <dependency>
             <groupId>org.example</groupId>

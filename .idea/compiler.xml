@@ -6,15 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springcloud-consumer-Dept-feign" />
         <module name="springcloud-provider-Dept-hystrix8001" />
         <module name="springcloud-Eureka-7001" />
-        <module name="springcloud-provider-Dept-8001" />
         <module name="springcloud-Eureka-7002" />
         <module name="springcloud-Eureka-7003" />
-        <module name="springcloud-provider-Dept-8002" />
+        <module name="springcloud-config-eureka" />
         <module name="springCloud-api" />
         <module name="springcloud-consumer-Dept-80" />
+        <module name="springcloud-zuul" />
+        <module name="springcloud-config-server" />
+        <module name="springcloud-consumer-Dept-feign" />
+        <module name="springcloud-consumer-Dept-hystrix-dashboard" />
+        <module name="springcloud-provider-Dept-8001" />
+        <module name="springcloud-provider-Dept-8002" />
+        <module name="springcloud-config-provider-8001" />
+        <module name="springcloud-config-client" />
       </profile>
     </annotationProcessing>
   </component>

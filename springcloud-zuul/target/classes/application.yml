@@ -1,0 +1,25 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: springcloud-zuul
+eureka:
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:7001/eureka/,http://127.0.0.1:7002/eureka/
+  instance:
+    instance-id: springcloud.zuul.com
+    prefer-ip-address: true
+
+info:
+  name: zuul
+  company: baozi
+
+zuul:
+  routes:
+    myDept.serviceId: springcloud-provider-dept
+    myDept.path: /mydept/**
+  ignored-services: "*" #*表示所有的原服务名都不能直接访问，隐藏真实原服务名
+  prefix: /baozi

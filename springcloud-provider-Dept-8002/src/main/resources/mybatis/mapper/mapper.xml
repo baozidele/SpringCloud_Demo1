@@ -1,14 +1,14 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.baozi.springcloud.dao.DeptDao">
+<mapper namespace="com.baozi.springcloud.hystrixDashboard.dao.DeptDao">
     <resultMap id="resultDept" type="Dept">
         <id column="deptno" property="deptno"/>
         <result column="dname" property="dname"/>
         <result column="db_resource" property="db_source"/>
     </resultMap>
 
-    <insert id="addDept" parameterType="com.baozi.springcloud.pojo.Dept">
+    <insert id="addDept" parameterType="com.baozi.springcloud.hystrixDashboard.pojo.Dept">
         insert into dept (dname,db_resource) values (#{dname},DATABASE());
     </insert>
 
